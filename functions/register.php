@@ -31,7 +31,6 @@ if(!$table_create){
 
         $password = sha1($password);
         $password = md5($password);
-        $password = $password -7;
 
         $sql3 = "INSERT INTO users (username, email, password, activated)  VALUES ('$username', '$email', '$password', '1')";
         $sql_res = mysqli_query($connect, $sql3);
@@ -40,7 +39,7 @@ if(!$table_create){
         }
           if($sql_res){
             session_start();
-            $_SESSION['logged'] = true;
+            $_SESSION['logged'] = "yes";
             $_SESSION['username'] = $username;
             $_SESSION['email'] = $email;
             require 'authController.php';

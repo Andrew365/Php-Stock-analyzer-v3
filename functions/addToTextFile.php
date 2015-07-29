@@ -3,6 +3,14 @@ session_start();
 $user = $_SESSION['username'];
 //checks if the data entered into the add ticker box is valid and will return an if if not
 $ticker = $_POST['newTicker'];
+if(!$ticker){
+  echo '<script type="text/javascript">
+  window.alert("That ticker doesnt exist");
+
+  document.location.href = "../dashboard.php";
+  </script>';
+  return false;
+}
 $file = "http://real-chart.finance.yahoo.com/table.csv?s={$ticker}&d={$curMonth}&e={$curDay}&f={$curYear}&g=d&a={$fromMonth}&b={$fromDay}&c={$fromYear}&ignore=.csv";
 $file_headers = @get_headers($file);
 if($file_headers[0] == 'HTTP/1.1 404 Not Found') {

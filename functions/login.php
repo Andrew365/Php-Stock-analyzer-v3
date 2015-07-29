@@ -8,7 +8,6 @@ require '../includes/connect.php';
   $password = $_POST['password'];
   $password = sha1($password);
   $password = md5($password);
-  $password = $password -7;
 
   $sql = "SELECT id, username, password, user_level FROM users WHERE username = '$usname' AND activated = '1' LIMIT 1";
   $query = mysqli_query($connect, $sql);

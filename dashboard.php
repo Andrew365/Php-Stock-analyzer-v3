@@ -27,14 +27,11 @@ if($_SESSION['logged'] != "yes"){
       				<li>Logged in as: <a href="profile.php"> <?php echo $_SESSION['username']; ?></a></li>
       			<?php endif; ?>
             <li><a href="index.php" >Home</a></li>
-      			<?php if(!isset($_SESSION['logged'])) :?>
-      			<li><a href="register.php">Sign Up</a></li>
-      			<li><a href="login.php">Login</a></li>
-      		<?php endif; ?>
-      		<?php if(isset($_SESSION['logged'])) :?>
+      		<?php if($_SESSION['logged'] == "yes") :?>
       			<li><a href="functions/logout.php">Log Out</a></li>
+                        <li><a href="profile.php">Profile</a></li>
       		<?php endif; ?>
-
+          <!-- Add Ticker -->
           <li>
           <div id="adder" class="form-inline">
             <form class="" action="functions/addToTextFile.php" method="post">
@@ -45,10 +42,11 @@ if($_SESSION['logged'] != "yes"){
             </form>
           </div>
         </li>
+        <!-- End of AddTicker -->
         <li>  <form class="" action="functions/logout.php" method="post">
             <input class="btn btn-danger" type="submit" name="submit" value="Logout" id="logout">
           </form>
-  </li>
+        </li>
             </ul>
         </div>
         </div>

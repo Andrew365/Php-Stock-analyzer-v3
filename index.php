@@ -1,7 +1,8 @@
 
 <?php
 require'templates/master.php';
-
+session_start();
+ error_reporting(0);
 ?>
 
 	<meta name="viewport" content="initial-scale=1">
@@ -66,8 +67,9 @@ $(window).scroll(function(){
 			<li><a href="register.php">Sign Up</a></li>
 			<li><a href="login.php">Login</a></li>
 		<?php endif; ?>
-		<?php if(isset($_SESSION['logged'])) :?>
-			<li><a href="functions/logout.php">Log Out</a></li>
+		<?php if($_SESSION['logged'] == "yes") :?>
+						<li><a href="functions/logout.php">Log Out</a></li>
+						<li><a href="profile.php">Profile</a></li>
 		<?php endif; ?>
     </ul>
   </div>

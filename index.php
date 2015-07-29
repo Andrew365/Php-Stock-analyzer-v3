@@ -1,7 +1,7 @@
 
 <?php
 require'templates/master.php';
-session_start();
+
 ?>
 
 	<meta name="viewport" content="initial-scale=1">

@@ -8,6 +8,22 @@ $user = $_SESSION['username'];
 function masterLoop(){
   $user = $_SESSION['username'];
   require '../includes/connect.php';
+      require '../includes/connect.php';
+      $table_sql = "CREATE TABLE IF NOT EXISTS {$user}analysis_a (
+                    ticker VARCHAR(8),
+                    daysInc INTEGER,
+                    pctOfDaysInc FLOAT,
+                    avgIncPct FLOAT,
+                    daysDec INTEGER,
+                    pctOfDaysDec FLOAT,
+                    avgDecPct FLOAT,
+                    BuyValue FLOAT,
+                    SellValue FLOAT
+                     )";
+      $table = mysqli_query($connect, $table_sql);
+      if(!$table){
+        echo 'cant create table' . mysqli_error($connect);
+      }
     $mainTickerSQL = "SELECT ticker FROM {$user}tickers";
     $ticker_result = mysqli_query($connect, $mainTickerSQL);
     if(!$ticker_result){

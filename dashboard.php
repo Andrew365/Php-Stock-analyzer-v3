@@ -1,10 +1,10 @@
 <?php
-require'templates/master.php';
-session_start();
+// require'templates/master.php';
+ session_start();
 error_reporting(0);
 require'templates/master.php';
 if($_SESSION['logged'] != "yes"){
-//  error_reporting(0);
+ error_reporting(0);
   require 'Oops.php';
   return false;
 }

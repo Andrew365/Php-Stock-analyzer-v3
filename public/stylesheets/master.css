@@ -1,0 +1,10 @@
+#table_header{
+  position: fixed;
+  background-color: red;
+}
+#adder{
+  padding-left: 300px;
+}
+#logout{
+  padding-left: -500px;
+}

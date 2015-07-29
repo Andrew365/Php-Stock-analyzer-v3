@@ -28,22 +28,22 @@ if($_SESSION['logged'] == "yes"){
 					<ol class="fs-fields">
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="username">Username</label>
-							<input class="fs-anim-lower" id="q1" name="username" type="text" placeholder="Dean Moriarty" required/>
+							<input class="fs-anim-lower" id="q1" name="username" type="text" placeholder="MyUsername" autocomplete="off" required/>
 						</li>
             <li>
               <label class="fs-field-label fs-anim-upper" for="username">Email</label>
-              <input class="fs-anim-lower" id="q2" name="email" type="email" placeholder="me@example.com" required/>
+              <input class="fs-anim-lower" id="q2" name="email" type="email" placeholder="me@example.com" autocomplete="off"  required/>
             </li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="password" data-info"">What is your password?</label>
-							<input class="fs-anim-lower" id="q3" name="password" type="password" placeholder="dean@road.us" required/>
+							<input class="fs-anim-lower" id="q3" name="password" type="password" placeholder="SuperDuperSecret" autocomplete="off" required/>
 						</li>
             <li>
               <label class="fs-field-label fs-anim-upper" for="password" data-info"">Confirm Your Password</label>
-              <input class="fs-anim-lower" id="q4" name="password2" type="password" placeholder="dean@road.us" required/>
+              <input class="fs-anim-lower" id="q4" name="password2" type="password" placeholder="SuperDuperSecret" autocomplete="off" required/>
             </li>
 					</ol><!-- /fs-fields -->
-					<button class="fs-submit" name="submit" name="submit">Login</button>
+					<button class="fs-submit" name="submit" name="submit">Sign Up</button>
 				</form><!-- /fs-form -->
 			</div><!-- /fs-form-wrap -->
 

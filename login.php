@@ -29,11 +29,11 @@ if($_SESSION['logged'] == "yes"){
 					<ol class="fs-fields">
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="username">What's your username?</label>
-							<input class="fs-anim-lower" id="q1" name="username" type="text" placeholder="Dean Moriarty" required/>
+							<input class="fs-anim-lower" id="q1" name="username" type="text" placeholder="MyUsername" autocomplete="off" required/>
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="password" data-info"">What is your password?</label>
-							<input class="fs-anim-lower" id="q2" name="password" type="password" placeholder="dean@road.us" required/>
+							<input class="fs-anim-lower" id="q2" name="password" type="password" placeholder="example@me.com" autocomplete="off" required/>
 						</li>
 					</ol><!-- /fs-fields -->
 					<button class="fs-submit" name="submit" name="submit">Login</button>

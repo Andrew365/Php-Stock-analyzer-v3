@@ -86,7 +86,7 @@ if(!$table){
            </form>
           <td>
           <td>
-          <form class="" action="stockUpdater.php" method="post">
+          <form class="" action="analysis/analysis_a.php" method="post">
             <input class="" type="hidden" name="ticker" value="'.$ticker .'">
             <input class="btn btn-info" type="submit" name="delete" value="Update">
           </form>

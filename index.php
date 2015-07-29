@@ -1,8 +1,8 @@
 
 <?php
 require'templates/master.php';
+error_reporting(0);
 session_start();
- error_reporting(0);
 ?>
 
 	<meta name="viewport" content="initial-scale=1">

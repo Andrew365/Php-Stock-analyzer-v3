@@ -1,7 +1,8 @@
 <?php
 require '../includes/connect.php';
 
-    if($_POST['submit']){
+    // if($_POST['submit']){
+    if(isset($_POST['username']) && isset($_POST['password'])){
 
   $usname = strip_tags($_POST['username']);
   $password = $_POST['password'];
@@ -38,4 +39,6 @@ require '../includes/connect.php';
     $error->comboNotFound();
   }
 
-    }
+}else{
+  header("Location: ../login.php");
+}

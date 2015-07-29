@@ -22,14 +22,6 @@ require'templates/master.php';
 <link rel="stylesheet" type="text/css" media="only screen and (min-width:100px) and
 (max-width: 299px)" href="public/stylesheets/100/index.css"/>
 <style media="screen">
-  #top{
-    padding-top: 12px;
-    padding-left: 1000px;
-
-  }
-  #info{
-    padding-bottom: 20px;
-  }
 </style>
 <!-- end of media queries -->
 <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>

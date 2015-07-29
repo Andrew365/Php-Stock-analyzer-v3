@@ -13,3 +13,13 @@
   font: Arial Verdana;
   font-family: sans-serif;
 }
+#table_header{
+  position: fixed;
+  background-color: red;
+}
+#adder{
+  padding-left: 300px;
+}
+#logout{
+  float: right;
+}

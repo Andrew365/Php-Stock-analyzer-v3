@@ -1,4 +1,12 @@
 #top{
+  padding-top: 12px;
+  padding-left: 20%;
+
+}
+#info{
+  padding-bottom: 20px;
+}
+#top{
   background-color: rgba(251, 251, 251, 0.7);
 }
 
@@ -11,7 +19,7 @@ background: linear-gradient(rgba(197, 197, 211,0.3), rgba(197, 197, 211,0.5)),
 url('../../images/streetblur.jpg') center center no-repeat fixed;
 position: relative;
 position: top center;
-height: auto 400;
+height: auto 300px;
 background-attachment: fixed;
 overflow: hidden;
 }
@@ -57,12 +65,4 @@ float:left;
     z-index: 1;
     background-attachment: fixed;
     overflow: hidden;
-  }
-  #top{
-    padding-top: 12px;
-    padding-left: 70%;
-
-  }
-  #info{
-    padding-bottom: 20px;
   }

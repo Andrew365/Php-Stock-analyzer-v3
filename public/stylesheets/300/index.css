@@ -1,4 +1,12 @@
 #top{
+  padding-top: 12px;
+  padding-left: 15%;
+  padding-right: 2%;
+}
+#info{
+  padding-bottom: 20px;
+}
+#top{
   background-color: rgba(251, 251, 251, 0.7);
 }
 
@@ -7,11 +15,12 @@
   /*overflow: hidden;*/
 }
 #splashpage{
-background: linear-gradient(rgba(197, 197, 211,0.3), rgba(197, 197, 211,0.5)),
-url('../../images/streetblur.jpg') center center no-repeat fixed;
+/*background:
+url('../../images/streetblur.jpg') center center no-repeat fixed;*/
 position: relative;
 position: top center;
-height: auto 400;
+height: auto;
+width: 100%;
 background-attachment: fixed;
 overflow: hidden;
 }

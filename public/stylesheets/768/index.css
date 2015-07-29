@@ -1,4 +1,12 @@
 #top{
+  padding-top: 12px;
+  padding-left: 70%;
+
+}
+#info{
+  padding-bottom: 20px;
+}
+#top{
   background-color: rgba(251, 251, 251, 0.7);
 }
 

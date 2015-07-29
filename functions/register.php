@@ -19,14 +19,32 @@ if(!$table_create){
   echo mysqli_error($connect);
 }
   if(!empty($username) && !empty($password2) && !empty($password) && !empty($email)){
-    $sql2 = "SELECT 8 FROM users WHERE username = '$username'";
+    $sql2 = "SELECT * FROM users WHERE username = '$username'";
     $sql_res = mysqli_query($connect, $sql2);
+
+    $email = $_POST['email'];
+
+    $sql9 = "SELECT * FROM users WHERE email = '$email'";
+    $res9 = mysqli_query($connect, $sql9);
+
+
     if(!$sql_res){
       echo mysqli_error($connect);
     }
     if(mysqli_fetch_array($sql_res)> 0){
-      echo "that username already exists";
-    }else{
+      echo '<script type="text/javascript">
+        confirm("That username is taken");
+        window.location.href = '../register.php';
+      </script>';
+      return false;
+    }elseif ($res9) {
+      echo '<script type="text/javascript">
+        confirm("That email is taken");
+        window.location.href = '../register.php';
+      </script>';
+      return false;
+    }
+    else{
       if($password == $password2){
 
         $password = sha1($password);
